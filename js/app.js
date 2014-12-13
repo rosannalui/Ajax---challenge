@@ -45,7 +45,7 @@ angular.module('comments', ['ui.bootstrap'])
                 .finally(function() {
                  $scope.inserting = false;
                 });
-            }  
+              
 
             //wrap everything into a function 
             $http.put('https://api.parse.com/1/classes/comments/' + comment.objectId,rateChange )
@@ -63,4 +63,4 @@ angular.module('comments', ['ui.bootstrap'])
                     $scope.loadComments();
                 });
         };
-    });
+    }); 
